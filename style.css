@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary-v-dark-magenta: hsl(300, 43%, 22%);
+    --primary-soft-pink: hsl(333, 80%, 67%);
+    --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0, right 0 bottom 0;
+}
+
+main {
+    padding: 8.2rem 10.3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 56em) {
+    main {
+        padding: 8.2rem 2rem 0;
+    }
+}
+
+@media (max-width: 33.5em) {
+    main {
+        padding-top: 5.3rem;
+        padding: 5.3rem 1.5rem 0;
+    }
+
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left 0 top 0, right 0 bottom 0;
+    }
+}
+
+
+/* ------------ top section ------------ */
+
+section .split:first-of-type {
+    max-width: 28rem;
+}
+
+section .split h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    color: var(--primary-v-dark-magenta);
+    line-height: 3rem;
+}
+
+section .split p {
+    color: var(--neutral-dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 1.58rem;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    letter-spacing: -0.07rem;
+}
+
+section .split:last-of-type {
+    flex-basis: 33.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section .split .review {
+    width: 82%;
+    border-radius: 0.5rem;
+    background-color: var(--neutral-light-grayish-magenta);
+    display: flex;
+    padding: 1.1rem 1.9rem;
+}
+
+section .split .review:nth-of-type(2) {
+    align-self: center;
+}
+
+section .split .review:last-of-type {
+    align-self: flex-end;
+}
+
+section .split .review h2 {
+    font-weight: 700;
+    font-size: 0.83rem;
+    color: var(--primary-v-dark-magenta);
+    align-items: center;
+}
+
+section .split .review .stars img {
+    padding-right: 0.25rem;
+}
+
+section .split .review .stars {
+    padding-right: 1.75rem;
+}
+
+@media (max-width: 80.5em) {
+    section .split .review {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 66em) {
+
+    section:first-of-type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section:first-of-type h1,
+    section:first-of-type p {
+        text-align: center;
+    }
+
+    section .split:last-of-type {
+        margin-top: 2rem;
+        width: 100%;
+        flex-basis: 13rem;
+    }
+
+    section .split:last-of-type .review {
+        width: 100%;
+    }
+}
+
+@media (max-width: 33.5em) {
+    section .split h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    section .split p {
+        font-size: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    section .split .review {
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    section .split .review .stars img {
+        padding-right: 0.2rem;
+    }
+
+    section .split .review .stars img:last-of-type {
+        padding-right: 0;
+    }
+    
+    section .split .review .stars {
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+/* ------------ bottom section ------------ */
+
+section:last-of-type {
+    margin-top: 4.35rem;
+    min-height: 16.6425rem;
+}
+
+section .purple-box {
+    background-color: var(--primary-v-dark-magenta);
+    padding: 2.5rem 2rem 2.4rem;
+    border-radius: 0.5rem;
+    max-width: 21.87rem;
+    max-height: 14.6975rem;
+}
+
+section .purple-box:nth-of-type(2) {
+    align-self: center;
+    margin: 0 1rem;
+}
+
+section .purple-box:last-of-type {
+    align-self: flex-end;
+}
+
+section .purple-box .customer img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+section .purple-box .customer {
+    display: flex;
+}
+
+section .purple-box .customer .customer-info {
+    padding-left: 1.45rem;
+}
+
+section .purple-box .customer .customer-info h3 {
+    color: var(--neutral-light-grayish-magenta);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 0;
+}
+
+section .purple-box .customer .customer-info p {
+    color: var(--primary-soft-pink);
+    font-size: 0.8rem;
+}
+
+section .purple-box > p {
+    color: var(--neutral-light-grayish-magenta);
+    margin-top: 1.7rem;
+    font-size: 0.795rem;
+    line-height: 1.4rem;
+}
+
+@media (max-width: 78.5em) {
+    section .purple-box {
+        max-height: 17rem;
+        padding: 2rem 1.5rem 2rem;
+    }
+}
+
+@media (max-width: 66em) {
+    section:last-of-type {
+        margin: 1.5rem 0 0;
+    }
+}
+
+@media (max-width: 62.5em) {
+    section:last-of-type {
+        flex-direction: column;
+        align-items: center;
+        min-height: none;
+    }
+
+    section .purple-box {
+        max-width: none;
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 33.5em) {
+    section:last-of-type {
+        margin: 1rem 0 0;
+    }
+
+    section .purple-box {
+        padding: 2.5rem 2rem 2rem;
+    }
+}
+
+
+/*  ------------ footer ------------ */
+
+footer {
+    padding-top: 5.5rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
+    color: #ef9546;
+    font-weight: 500;
+}
+
+footer a {
+    color: #ef9546;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media (min-width: 90rem) {
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0.1875rem;
+    }
+}
