@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FrontEnd Mentor: My Solution](https://www.frontendmentor.io/solutions/responsive-social-proof-section-using-flexbox-ShX7Xhggr)
-- Live Site URL: [GitHub Page: Profile Card Component](https://anoshaahmed.github.io/fem-social-proof-section/)
+- Live Site URL: [GitHub Page: Profile Card Component](https://anoshaahmed.github.io/fem06-social-proof-section/)
 
 ## My process
 
